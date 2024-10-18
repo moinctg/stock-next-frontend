@@ -1,20 +1,23 @@
-import ECommerce from "@/components/Dashboard/E-commerce";
+// import ECommerce from "@/components/Dashboard/E-commerce";
 import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLaout";
-import React from "react";
+import Head from 'next/head';
 
-export const metadata: Metadata = {
-  title:
-    "Stock Market Admin  | NextAdmin - Next.js Dashboard Kit",
-  description: "This is stock market prediction system web app ",
-};
+import React from "react";
+import Main from "@/components/Home/index"
+// import About from "@/components/About/intex"
+// export const metadata: Metadata = {
+//   title:
+//     "Stock Market Admin  | NextAdmin - Next.js Dashboard Kit",
+//   description: "This is stock market prediction system web app ",
+// };
 
 export default function Home() {
   return (
     <>
-      <DefaultLayout>
-        <ECommerce />
-      </DefaultLayout>
+     
+
+          <Main/>
+        
     </>
   );
 }
