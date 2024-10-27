@@ -63,6 +63,14 @@ const menuGroups = [
       //   { label: "home", route: "/" },
       // ],
     },
+    // {
+    //   label: "About",
+    //   route: "/about",
+    //   // children: [
+    //   //   { label: "home", route: "/" },
+    //   // ],
+    // },
+
 
       // {
       //   icon: (
@@ -205,7 +213,7 @@ const menuGroups = [
           </svg>
         ),
         label: "Pages",
-        route: "#",
+        route: "/pages",
         children: [
           { label: "Settings", route: "/pages/settings" },
         ],
@@ -213,6 +221,9 @@ const menuGroups = [
           { label: "AddPredict", route: "/pages/add_predict" },
         ],
         children3: [
+          { label: "Prediction", route: "/pages/prediction" },
+        ],
+        children4: [
           { label: "Reports", route: "/pages/reports" },
         ],
       },

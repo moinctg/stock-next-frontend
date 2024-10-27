@@ -3,7 +3,10 @@ import { Metadata } from "next";
 import Head from 'next/head';
 
 import React from "react";
-import Main from "@/components/Home/index"
+import Headers from "@/components/Headers/Headers";
+import Footer from "@/components/Footer/Footer";
+import About from "./about/page";
+import Contact from "./contact/page";
 // import About from "@/components/About/intex"
 // export const metadata: Metadata = {
 //   title:
@@ -15,8 +18,15 @@ export default function Home() {
   return (
     <>
      
-
-          <Main/>
+<div>
+  <Headers/>
+  <main>
+    {/* <About/>
+     */}
+   <h2>this is landing page</h2>
+  </main>
+  <Footer/>
+</div>
         
     </>
   );

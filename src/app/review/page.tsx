@@ -1,7 +1,12 @@
-const Review  = () => {
+import Headers from '@/components/Headers/Headers'
+export default function Review (){
     return(
-        <div>
-            <section className="review-section spad">
+
+ 
+
+<>
+<Headers/>
+<section className="review-section spad">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 push-8">
@@ -9,23 +14,23 @@ const Review  = () => {
             <div className="review-text-slider owl-carousel">
               <div className="review-text">
                 <p>
-                  "Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
+                ``Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
                   you don’t have to be physically in the same place and, of course, for large transactions, currency can
-                  get pretty inconvenient.”
+                  get pretty inconvenient``
                 </p>
               </div>
               <div className="review-text">
                 <p>
-                  "Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
+                ``Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
                   you don’t have to be physically in the same place and, of course, for large transactions, currency can
-                  get pretty inconvenient.”
+                  get pretty inconvenient``
                 </p>
               </div>
               <div className="review-text">
                 <p>
-                  "Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
+                  ``Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
                   you don’t have to be physically in the same place and, of course, for large transactions, currency can
-                  get pretty inconvenient.”
+                  get pretty inconvenient``
                 </p>
               </div>
             </div>
@@ -160,9 +165,6 @@ const Review  = () => {
         </div>
       </div>
     </section>
-
-
-        </div>
-    )
+</>
+       );
 }
-export default Review

@@ -1,8 +1,12 @@
-const Team = () => {
+import Footer from "@/components/Footer/Footer"
+import Headers from "@/components/Headers/Headers"
+export default function Team (){
+    return (
 
-    return(
-        <div>
-             
+   
+    <>
+    <Headers/>
+        <main>   
     <section className="team-section spad">
       <div className="container">
         <div className="section-title text-center">
@@ -135,9 +139,12 @@ const Team = () => {
         </div>
       </div>
     </section>
-        </div>
+    </main>  
 
-    )
+    <Footer/>
+
+    
+    </>
+     )
+
 }
-
-export default Team 

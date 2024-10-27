@@ -1,6 +1,6 @@
-const Features = () => {
-    return (
-        <section className="features-section spad gradient-bg">
+export default function Features (){
+    <>
+     <section className="features-section spad gradient-bg">
         <div className="container text-white">
           <div className="section-title text-center">
             <h2>Our Features</h2>
@@ -76,8 +76,5 @@ const Features = () => {
           </div>
         </div>
       </section>
-       
-    )
-
+    </>
 }
-export default Features

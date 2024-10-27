@@ -1,8 +1,11 @@
-const Process = () => {
-
+export default function Process (){
     return(
 
-        <section className="process-section spad">
+ 
+    <>
+    
+
+    <section className="process-section spad">
         <div className="container">
           <div className="section-title text-center">
             <h2>Get Started With Bitcoin</h2>
@@ -47,7 +50,6 @@ const Process = () => {
           </div>
         </div>
       </section>
-    )
+    </>
+       )
 }
-
-export default Process
