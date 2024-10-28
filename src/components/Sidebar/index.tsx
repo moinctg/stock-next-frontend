@@ -49,20 +49,20 @@ const menuGroups = [
         ],
       },
 
-      {
-      label: "Home",
-      route: "/home",
-      children: [
-        { label: "home", route: "/" },
-      ],
-    },
-    {
-      label: "Login",
-      route: "/login",
-      // children: [
-      //   { label: "home", route: "/" },
-      // ],
-    },
+    //   {
+    //   label: "Home",
+    //   route: "/home",
+    //   children: [
+    //     { label: "home", route: "/" },
+    //   ],
+    // },
+    // {
+    //   label: "Login",
+    //   route: "/login",
+    //   // children: [
+    //   //   { label: "home", route: "/" },
+    //   // ],
+    // },
     // {
     //   label: "About",
     //   route: "/about",
@@ -212,26 +212,26 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Pages",
-        route: "/pages",
+        label: "Settings",
+        route: "/Settingss",
         children: [
           { label: "Settings", route: "/pages/settings" },
         ],
-        children2: [
-          { label: "AddPredict", route: "/pages/add_predict" },
-        ],
-        children3: [
-          { label: "Prediction", route: "/pages/prediction" },
-        ],
-        children4: [
-          { label: "Reports", route: "/pages/reports" },
-        ],
+        // children2: [
+        //   { label: "AddPredict", route: "/pages/add_predict" },
+        // ],
+        // children3: [
+        //   { label: "Prediction", route: "/pages/prediction" },
+        // ],
+        // children4: [
+        //   { label: "Reports", route: "/pages/reports" },
+        // ],
       },
     ],
   },
   
   {
-    name: "OTHERS",
+    // name: "OTHERS",
     menuItems: [
       {
         icon: (
@@ -255,11 +255,13 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Charts",
+        label: "Input Form ",
         route: "#",
         children: [
-          { label: "Basic Chart", route: "/charts/basic-chart" },
+          { label: "Basic Prediction", route: "/pages/add_predict" },
+          { label: "predict LSTM", route: "/pages/Prediction" },
         ],
+       
       },
       {
         icon: (
@@ -297,11 +299,11 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "UI Elements",
+        label: "Report ",
         route: "#",
         children: [
-          { label: "Alerts", route: "/ui-elements/alerts" },
-          { label: "Buttons", route: "/ui-elements/buttons" },
+          { label: "Graph", route: "/report/graph" },
+          { label: "chart", route: "/report/chart" },
         ],
       },
       {

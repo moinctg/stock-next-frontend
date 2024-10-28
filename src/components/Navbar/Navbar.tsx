@@ -13,15 +13,15 @@ const Navbar = () =>{
           <a href="#" className="user">
             <i className="fa fa-user"></i>
           </a>
-          <Link href="/login" className="site-btn">Admin Login</Link>
+          <Link href="/auth/signin" className="site-btn">Admin Login</Link>
           <nav className="main-menu">
             <ul className="menu-list">
             {/* <Link href="/posts/first-post">this page!</Link> */}
-              <li><Link href="/">Home</Link></li> 
-              <li><Link  href="/features">Features </Link></li>
-              <li><Link href="/team">Team</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="#home">Home</Link></li> 
+              <li><Link  href="#features">Features </Link></li>
+              <li><Link href="#team">Team</Link></li>
+              <li><Link href="#about">About</Link></li>
+              <li><Link href="#contact">Contact</Link></li>
             </ul>
           </nav>
         </div>

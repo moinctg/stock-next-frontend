@@ -3,31 +3,36 @@ import { Metadata } from "next";
 import Head from 'next/head';
 
 import React from "react";
-import Headers from "@/components/Headers/Headers";
-import Footer from "@/components/Footer/Footer";
-import About from "./about/page";
-import Contact from "./contact/page";
-// import About from "@/components/About/intex"
-// export const metadata: Metadata = {
-//   title:
-//     "Stock Market Admin  | NextAdmin - Next.js Dashboard Kit",
-//   description: "This is stock market prediction system web app ",
-// };
+import Headers from "@/components/Headers";
+import Footer from "@/components/Footer";
+
+import HomeSection from './../components/Sections/HomeSection';
+import FeaturesSection from './../components/Sections/FeaturesSection';
+import TeamSection from './../components/Sections/TeamSection';
+import AboutSection from './../components/Sections/AboutSection';
+import ContactSection from './../components/Sections/ContactSection';
+import AdminLoginSection from './../components/Sections/AdminLoginSection';
+import ProcessSecton from "@/components/Sections/ProcessSection";
+import ReviewSection from "@/components/Sections/ReviewSection";
 
 export default function Home() {
   return (
     <>
      
 <div>
-  <Headers/>
-  <main>
-    {/* <About/>
-     */}
-   <h2>this is landing page</h2>
-  </main>
-  <Footer/>
-</div>
-        
+      <Headers />
+      <main>
+        <HomeSection />
+        <AboutSection />
+        <FeaturesSection />
+        <ProcessSecton/>
+        <TeamSection />
+        <ReviewSection/>
+        <ContactSection />
+        <AdminLoginSection />
+      </main>
+      <Footer />
+    </div>
     </>
   );
 }

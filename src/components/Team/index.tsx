@@ -1,12 +1,8 @@
-import Footer from "@/components/Footer/Footer"
-import Headers from "@/components/Headers/Headers"
-export default function Team (){
-    return (
+export default function Team  ()  {
 
-   
-    <>
-    <Headers/>
-        <main>   
+    return(
+        <>
+             
     <section className="team-section spad">
       <div className="container">
         <div className="section-title text-center">
@@ -139,12 +135,8 @@ export default function Team (){
         </div>
       </div>
     </section>
-    </main>  
-
-    <Footer/>
-
-    
     </>
-     )
 
+    )
 }
+

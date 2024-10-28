@@ -1,11 +1,7 @@
-export default function Process (){
+export default function ProcessSecton() {
     return(
-
- 
-    <>
-    
-
-    <section className="process-section spad">
+        <>
+         <section className="process-section spad">
         <div className="container">
           <div className="section-title text-center">
             <h2>Get Started With Bitcoin</h2>
@@ -50,6 +46,6 @@ export default function Process (){
           </div>
         </div>
       </section>
-    </>
-       )
+        </>
+    )
 }
