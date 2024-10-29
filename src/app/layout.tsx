@@ -1,18 +1,18 @@
 "use client";
 import "jsvectormap/dist/css/jsvectormap.css";
 import "flatpickr/dist/flatpickr.min.css";
-import "@/css/satoshi.css";
-import "@/css/style.css";
-import "@/css/bootstrap.min.css";
-import "@/css/owl.carousel.css";
-import "@/css/responsive.css";
-import "@/css/animation.css"
-import "@/css/animate.min.css";
-import "@/css/font-awesome.min.css"
-import "@/css/slicknav.min.css";
-import "@/css/material-design-iconic-font.min.css";
-import "@/css/themify-icons.css";
-import "@/css/style1.css";
+import "../css/satoshi.css";
+import "../css//style.css";
+import "../css/bootstrap.min.css";
+import "../css/owl.carousel.css";
+import "../css/responsive.css";
+import "../css//animation.css"
+import "../css/animate.min.css";
+import "../css/font-awesome.min.css"
+import "../css//slicknav.min.css";
+import "../css/material-design-iconic-font.min.css";
+import "../css/themify-icons.css";
+import "../css/style1.css";
 
 
 

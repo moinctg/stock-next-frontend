@@ -13,11 +13,12 @@ export default function Footer ()  {
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum.
               </p>
               <span>
-                Copyright &copy; {new Date().getFullYear()} All rights reserved | This template is made with{' '}
-                <i className="fa fa-heart-o" aria-hidden="true"></i> by{' '}
-                <a href="https://colorlib.com" target="_blank" rel="noreferrer">
-                  Colorlib
-                </a>
+                Copyright &copy; {new Date().getFullYear()} All rights reserved |
+              
+            
+                  Moinuddin Kamal 
+                  ID:006-40-08 
+               
               </span>
             </div>
   
