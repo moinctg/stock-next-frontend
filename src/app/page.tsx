@@ -29,7 +29,7 @@ export default function Home() {
         <TeamSection />
         <ReviewSection/>
         <ContactSection />
-        <AdminLoginSection />
+        {/* <AdminLoginSection /> */}
       </main>
       <Footer />
     </div>

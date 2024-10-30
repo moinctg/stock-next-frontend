@@ -2,38 +2,38 @@
 import { useEffect } from 'react';
 
 const Contact: React.FC = () => {
-  useEffect(() => {
-    // Load Google Maps
-    const loadScript = (src: string) => {
-      return new Promise<void>((resolve) => {
-        const script = document.createElement('script');
-        script.src = src;
-        script.async = true; // Load script asynchronously
-        script.onload = () => {
-          resolve();
-        };
-        document.body.appendChild(script);
-      });
-    };
+  // useEffect(() => {
+  //   // Load Google Maps
+  //   const loadScript = (src: string) => {
+  //     return new Promise<void>((resolve) => {
+  //       const script = document.createElement('script');
+  //       script.src = src;
+  //       script.async = true; // Load script asynchronously
+  //       script.onload = () => {
+  //         resolve();
+  //       };
+  //       document.body.appendChild(script);
+  //     });
+  //   };
 
-    const initMap = () => {
-      const map = new window.google.maps.Map(document.getElementById("map") as HTMLElement, {
-        center: { lat: 23.8103, lng: 90.4125 }, // Coordinates for Dhaka, Bangladesh
-        zoom: 12,
-      });
+  //   const initMap = () => {
+  //     const map = new window.google.maps.Map(document.getElementById("map") as HTMLElement, {
+  //       center: { lat: 23.8103, lng: 90.4125 }, // Coordinates for Dhaka, Bangladesh
+  //       zoom: 12,
+  //     });
 
-      new window.google.maps.Marker({
-        position: { lat: 23.8103, lng: 90.4125 },
-        map,
-        title: "Our Location",
-      });
-    };
+  //     new window.google.maps.Marker({
+  //       position: { lat: 23.8103, lng: 90.4125 },
+  //       map,
+  //       title: "Our Location",
+  //     });
+  //   };
 
-    loadScript(`https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`)
-      .then(() => {
-        window.initMap = initMap; // Define initMap in the window context
-      });
-  }, []);
+  //   loadScript(`https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`)
+  //     .then(() => {
+  //       window.initMap = initMap; // Define initMap in the window context
+  //     });
+  // }, []);
 
   return (
     <div className="max-w-4xl mx-auto p-6">
