@@ -1,3 +1,5 @@
+
+import  Image from 'next/image'
 export default function Footer ()  {
     return (
 
@@ -8,7 +10,7 @@ export default function Footer ()  {
           <div className="row spad">
             {/* Footer widget - Logo and description */}
             <div className="col-md-6 col-lg-3 footer-widget">
-              <img src="/assets/img/logo.png" className="mb-4" alt="Logo" />
+              <Image src="/assets/img/logo.png" className="mb-4" alt="Logo" />
               <p>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum.
               </p>
@@ -91,10 +93,10 @@ export default function Footer ()  {
             <div className="row">
               <div className="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
                 <a href="#">
-                  <img src="/assets/img/appstore.png" alt="App Store" className="mr-2" />
+                  <Image src="/assets/img/appstore.png" alt="App Store" className="mr-2" />
                 </a>
                 <a href="#">
-                  <img src="/assets/img/playstore.png" alt="Play Store" />
+                  <Image src="/assets/img/playstore.png" alt="Play Store" />
                 </a>
               </div>
               <div className="col-lg-8 text-center text-lg-right">

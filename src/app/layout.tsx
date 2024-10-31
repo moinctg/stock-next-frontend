@@ -20,6 +20,7 @@ import "../css/style1.css";
 import React, { useEffect, useState } from "react";
 import Loader from "@/components/common/Loader";
 import Head from  "next/head"
+import Script from 'next/script'
 
 export default function RootLayout({
   children,
@@ -45,18 +46,18 @@ export default function RootLayout({
   <link rel="stylesheet" href="/assets/css/animate.css" />
   <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
   <link rel="stylesheet" href="/assets/css/style1.css" />
- 
-
- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
       </Head>
       <body suppressHydrationWarning={true}>
         {loading ? <Loader /> : children}
 
-  <script src="/assets/js/jquery-3.2.1.min.js"></script>
-	<script src="/assets/js/owl.carousel.min.js"></script>
-	<script src="/assets/js/main.js"></script>
+        <Script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></Script>
+        <Script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></Script>      
+ 
+  <Script src="/assets/js/jquery-3.2.1.min.js"></Script>
+	<Script src="/assets/js/owl.carousel.min.js"></Script>
+	<Script src="/assets/js/main.js"></Script>
+ 
 
       </body>
     </html>

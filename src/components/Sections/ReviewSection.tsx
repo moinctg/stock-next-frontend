@@ -1,3 +1,4 @@
+  import Image from 'next/image'
   export default function ReviewSection (){
     return(
         <>
@@ -5,27 +6,27 @@
            <div className="container">
              <div className="row">
                <div className="col-lg-8 push-8">
-                 <img src="/assets/img/quote.png" alt="Quote" className="quote mb-5" />
+                 <Image src="/assets/img/quote.png" alt="Quote" className="quote mb-5" />
                  <div className="review-text-slider owl-carousel">
                    <div className="review-text">
                      <p>
-                       "Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
+                       `Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
                        you don’t have to be physically in the same place and, of course, for large transactions, currency can
-                       get pretty inconvenient.”
+                       get pretty inconvenient`
                      </p>
                    </div>
                    <div className="review-text">
                      <p>
-                       "Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
+                        `Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
                        you don’t have to be physically in the same place and, of course, for large transactions, currency can
-                       get pretty inconvenient.”
+                       get pretty inconvenient`
                      </p>
                    </div>
                    <div className="review-text">
                      <p>
-                       "Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
+                       `Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that
                        you don’t have to be physically in the same place and, of course, for large transactions, currency can
-                       get pretty inconvenient.”
+                       get pretty inconvenient`
                      </p>
                    </div>
                  </div>
@@ -86,7 +87,7 @@
                <div className="col-md-4">
                  <div className="blog-item">
                    <figure className="blog-thumb">
-                     <img src="/assets/img/blog/1.jpg" alt="Blog" />
+                     <Image src="/assets/img/blog/1.jpg" alt="Blog" />
                    </figure>
                    <div className="blog-text">
                      <div className="post-date">03 jan 2018</div>
@@ -111,7 +112,7 @@
                <div className="col-md-4">
                  <div className="blog-item">
                    <figure className="blog-thumb">
-                     <img src="/assets/img/blog/2.jpg" alt="Blog" />
+                     <Image src="/assets/img/blog/2.jpg" alt="Blog" />
                    </figure>
                    <div className="blog-text">
                      <div className="post-date">28 dec 2018</div>
@@ -136,7 +137,7 @@
                <div className="col-md-4">
                  <div className="blog-item">
                    <figure className="blog-thumb">
-                     <img src="/assets/img/blog/3.jpg" alt="Blog" />
+                     <Image src="/assets/img/blog/3.jpg" alt="Blog" />
                    </figure>
                    <div className="blog-text">
                      <div className="post-date">28 aug 2018</div>

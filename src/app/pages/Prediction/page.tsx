@@ -2,6 +2,8 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import DefaultLayout from "@/components/Layouts/DefaultLaout";
 import React, { useState } from "react";
+import axios from "axios"; // Import axios
+
 
 const PredictPage = () => {
   const [scrip, setScrip] = useState<string>("ACI");
@@ -12,32 +14,35 @@ const PredictPage = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-  
+
     // Parse input data
     const priceData = prices.split(",").map((price) => parseFloat(price.trim()));
     const actualPriceData = actual_price.split(",").map((price) => parseFloat(price.trim()));
     const dayData = days.map((day) => parseInt(day));
-  
+
+    // Log the parsed data before sending the request
+    // console.log("Payload Data:", {
+    //   scrip,
+    //   data: priceData,
+    //   actual_prices: actualPriceData,
+    //   days: dayData,
+    // });
+
     try {
-      const response = await fetch("https://stockprediction-fastapi-backend-1.onrender.com/predict", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      const response = await axios.post(
+        "https://stockprediction-fastapi-backend-1.onrender.com/predict",
+        {
           scrip,
           data: priceData,
           actual_prices: actualPriceData, // Ensure this matches the backend's expected field
           days: dayData,
-        }),
-      });
-  
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error("Error response:", errorText);
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-  
-      const result = await response.json();
-      setPrediction(result); // Set the response to state
+        },
+        { headers: { "Content-Type": "application/json" } }
+      );
+
+      console.log("Response Status:", response.status); // Log the response status
+      console.log("Received Prediction Result:", response.data); // Log the result from the backend
+      setPrediction(response.data); // Set the response to state
     } catch (error) {
       console.error("Error fetching prediction:", error);
     }
