@@ -1,5 +1,7 @@
 'use client'
 import { useState } from 'react';
+import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
+import DefaultLayout from "@/components/Layouts/DefaultLaout";
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import {
@@ -46,6 +48,9 @@ const Prediction = () => {
   };
 
   return (
+    <DefaultLayout>
+      <div className="mx-auto w-full max-w-[1080px]">
+        <Breadcrumb pageName="AddPrediction" />
     <div className="max-w-2xl mx-auto p-4">
       <div className="mb-4 bg-white p-6 rounded-lg shadow-md">
         <input
@@ -124,6 +129,10 @@ const Prediction = () => {
         </div>
       )}
     </div>
+    </div>
+   
+   
+    </DefaultLayout>
   );
 };
 
