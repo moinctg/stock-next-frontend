@@ -338,7 +338,7 @@ ol {
 	Hero Section
 -----------------------*/
 
-.hero-section {
+ .hero-section {
 	height: 900px;
 	padding-top: 260px;
 	display: block;
@@ -352,6 +352,7 @@ ol {
 }
 
 .hero-section .laptop-image {
+	/* background-image: url("/assets/img/laptop.png"); */
 	width: 685px;
 	max-width: none;
 	position: relative;
@@ -360,8 +361,28 @@ ol {
 
 .hero-text {
 	padding-top: 60px;
+} 
+/* .hero-section {
+	height: 900px;
+	padding-top: 260px;
+	display: block;
+	background-image: url("/assets/img/hero-bg.png");
+	background-size: cover;
+	background-color: #f3f7f9;
+	background-position: right top;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
 }
 
+.hero-text {
+	padding-top: 60px;
+}
+
+.hero-subscribe-from input {
+	width: 100%;
+	max-width: 300px;
+} */
 .hero-text h2 {
 	font-size: 70px;
 	margin-bottom: 35px;

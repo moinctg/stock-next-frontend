@@ -1,7 +1,8 @@
 // components/sections/AdminLoginSection.tsx
+import Image from 'next/image'
 export default function AdminLoginSection() {
     return (
-              
+              <>
     <section className="team-section spad">
     <div className="container">
       <div className="section-title text-center">
@@ -14,7 +15,7 @@ export default function AdminLoginSection() {
       <div className="member">
         <div className="member-text">
           <div className="member-img">
-            <img src="/assets/img/member/1.jpg" alt="Tom Binegar" />
+            <Image src="/assets/img/member/1.jpg" width={400} height={400}  alt="Tom Binegar" />
           </div>
           <h2>Tom Binegar</h2>
           <span>Business Development</span>
@@ -26,7 +27,7 @@ export default function AdminLoginSection() {
         </div>
         <div className="member-info">
           <div className="member-img mf">
-            <img src="/assets/img/member/1.jpg" alt="Tom Binegar" />
+            <Image  src="/assets/img/member/1.jpg" width={400} height={400} alt="Tom Binegar" />
           </div>
           <div className="member-meta">
             <h2>Tom Binegar</h2>
@@ -39,7 +40,7 @@ export default function AdminLoginSection() {
       <div className="member">
         <div className="member-text">
           <div className="member-img">
-            <img src="/assets/img/member/2.jpg" alt="Jackson Nash" />
+            <Image  src="/assets/img/member/2.jpg" width={400} height={400}  alt="Jackson Nash" />
           </div>
           <h2>Jackson Nash</h2>
           <span>Business Development</span>
@@ -51,7 +52,7 @@ export default function AdminLoginSection() {
         </div>
         <div className="member-info">
           <div className="member-img mf">
-            <img src="/assets/img/member/2.jpg" alt="Jackson Nash" />
+            <Image src="/assets/img/member/2.jpg" width={400} height={400} alt="Jackson Nash" />
           </div>
           <div className="member-meta">
             <h2>Jackson Nash</h2>
@@ -63,7 +64,7 @@ export default function AdminLoginSection() {
       <div className="member">
         <div className="member-text">
           <div className="member-img">
-            <img src="/assets/img/member/3.jpg" alt="Aaron Ballance" />
+            <Image  src="/assets/img/member/3.jpg" width={400} height={400}  alt="Aaron Ballance" />
           </div>
           <h2>Aaron Ballance</h2>
           <span>CEO Bitcoin</span>
@@ -75,7 +76,7 @@ export default function AdminLoginSection() {
         </div>
         <div className="member-info">
           <div className="member-img mf">
-            <img src="/assets/img/member/3.jpg" alt="Aaron Ballance" />
+            <Image  src="/assets/img/member/3.jpg" width={400} height={400} alt="Aaron Ballance" />
           </div>
           <div className="member-meta">
             <h2>Aaron Ballance</h2>
@@ -87,7 +88,7 @@ export default function AdminLoginSection() {
       <div className="member">
         <div className="member-text">
           <div className="member-img">
-            <img src="/assets/img/member/4.jpg" alt="Melissa Barth" />
+            <Image src="/assets/img/member/4.jpg" width={400} height={400} alt="Melissa Barth" />
           </div>
           <h2>Melissa Barth</h2>
           <span>Product Manager</span>
@@ -99,7 +100,7 @@ export default function AdminLoginSection() {
         </div>
         <div className="member-info">
           <div className="member-img mf">
-            <img src="/assets/img/member/4.jpg" alt="Melissa Barth" />
+            <Image src="/assets/img/member/4.jpg" width={400} height={400}  alt="Melissa Barth" />
           </div>
           <div className="member-meta">
             <h2>Melissa Barth</h2>
@@ -111,7 +112,7 @@ export default function AdminLoginSection() {
       <div className="member">
         <div className="member-text">
           <div className="member-img">
-            <img src="/assets/img/member/5.jpg" alt="Katy Abrams" />
+            <Image  src="/assets/img/member/5.jpg" width={400} height={400} alt="Katy Abrams" />
           </div>
           <h2>Katy Abrams</h2>
           <span>Head of Design</span>
@@ -123,7 +124,7 @@ export default function AdminLoginSection() {
         </div>
         <div className="member-info">
           <div className="member-img mf">
-            <img src="/assets/img/member/5.jpg" alt="Katy Abrams" />
+            <Image  src="/assets/img/member/5.jpg" width={400} height={400} alt="Katy Abrams" />
           </div>
           <div className="member-meta">
             <h2>Katy Abrams</h2>
@@ -134,6 +135,7 @@ export default function AdminLoginSection() {
       </div>
     </div>
   </section>
+  </>
     );
   }
   

@@ -10,16 +10,18 @@ export default function Footer ()  {
           <div className="row spad">
             {/* Footer widget - Logo and description */}
             <div className="col-md-6 col-lg-3 footer-widget">
-              <Image src="/assets/img/logo.png" className="mb-4" alt="Logo" />
+              <Image src="/assets/img/logo.png" width={146} height={120} className="mb-4" alt="Logo" />
               <p>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum.
               </p>
               <span>
                 Copyright &copy; {new Date().getFullYear()} All rights reserved |
               
-            
+                  Develop by 
                   Moinuddin Kamal 
                   ID:006-40-08 
+                  Final Year Project
+
                
               </span>
             </div>
@@ -93,10 +95,10 @@ export default function Footer ()  {
             <div className="row">
               <div className="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
                 <a href="#">
-                  <Image src="/assets/img/appstore.png" alt="App Store" className="mr-2" />
+                  <Image src="/assets/img/appstore.png" width={119} height={37} alt="App Store" className="mr-2" />
                 </a>
                 <a href="#">
-                  <Image src="/assets/img/playstore.png" alt="Play Store" />
+                  <Image src="/assets/img/playstore.png"  width={119} height={37} alt="Play Store" />
                 </a>
               </div>
               <div className="col-lg-8 text-center text-lg-right">
@@ -114,7 +116,7 @@ export default function Footer ()  {
                     <a href="mailto:support@company.com">support@company.com</a>
                   </li>
                   <li>
-                    <a href="tel:(123)456-7890">(123) 456-7890</a>
+                    <a href="tel:(123)456-7890">880-1824-682965 </a>
                   </li>
                 </ul>
               </div>

@@ -258,8 +258,9 @@ const menuGroups = [
         label: "Input Form ",
         route: "#",
         children: [
-          { label: "Basic Prediction", route: "/pages/add_predict" },
-          { label: "predict LSTM", route: "/pages/Prediction" },
+          { label: "Basic Prediction", route: "/pages/AddPredict" },
+          { label: "Predict LSTM", route: "/pages/Prediction" },
+          { label: "Predict Multiple", route: "/pages/MultiplePredict" },
         ],
        
       },

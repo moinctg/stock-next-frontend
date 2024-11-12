@@ -6,7 +6,7 @@
            <div className="container">
              <div className="row">
                <div className="col-lg-8 push-8">
-                 <Image src="/assets/img/quote.png" alt="Quote" className="quote mb-5" />
+                 <Image src="/assets/img/quote.png" width={46} height={35} alt="Quote" className="quote mb-5" />
                  <div className="review-text-slider owl-carousel">
                    <div className="review-text">
                      <p>
@@ -87,7 +87,7 @@
                <div className="col-md-4">
                  <div className="blog-item">
                    <figure className="blog-thumb">
-                     <Image src="/assets/img/blog/1.jpg" alt="Blog" />
+                     <Image src="/assets/img/blog/1.jpg" width={1000} height={676} alt="Blog" />
                    </figure>
                    <div className="blog-text">
                      <div className="post-date">03 jan 2018</div>
@@ -112,7 +112,7 @@
                <div className="col-md-4">
                  <div className="blog-item">
                    <figure className="blog-thumb">
-                     <Image src="/assets/img/blog/2.jpg" alt="Blog" />
+                     <Image src="/assets/img/blog/2.jpg" alt="Blog" width={1000} height={676} />
                    </figure>
                    <div className="blog-text">
                      <div className="post-date">28 dec 2018</div>
@@ -137,7 +137,7 @@
                <div className="col-md-4">
                  <div className="blog-item">
                    <figure className="blog-thumb">
-                     <Image src="/assets/img/blog/3.jpg" alt="Blog" />
+                     <Image src="/assets/img/blog/3.jpg" width={1000} height={676}   alt="Blog" />
                    </figure>
                    <div className="blog-text">
                      <div className="post-date">28 aug 2018</div>
